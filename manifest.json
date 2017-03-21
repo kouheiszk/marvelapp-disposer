@@ -1,0 +1,13 @@
+{
+  "name": "Marvelapp Disposer",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Marvelappで画面キャプチャと撮る際にボタンを消す",
+  "content_scripts": [
+    {
+      "matches": ["https://marvelapp.com/*/screen/*"],
+      "js": ["jquery-3.1.1.min.js", "main.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
